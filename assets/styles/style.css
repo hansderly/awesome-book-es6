@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,400;1,700&family=Lato:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+}
+
 body {
+  padding: 2%;
   margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.library {
+  padding: 2%;
+}
+
+.libraryContent {
+  border: 3px solid black;
+  padding: 2%;
+}
+
+.book {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#add {
+  position: relative;
+  left: 75%;
+  border: 2px solid black;
+}
+
+#remove {
+  border: 2px solid black;
+}
+
+.divider {
+  margin-top: 20px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.inputclass {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  border: 3px solid black;
+}
+
+.nav li {
+  all: unset;
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding: 1%;
+  margin-top: 5%;
+  border: 3px solid black;
 }

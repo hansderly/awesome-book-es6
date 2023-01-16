@@ -5,13 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
-    <h1>awesome book</h1>
+    <nav class="nav">
+        <p>Awesome Books</p>
+        <ul>
+            <li id="list"><a href="#">List</a></li>
+            <li id="add-new"><a href="#">Add new</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="time">
+        <p class="time-text"></p>
+    </div>
 
+
+    <section class="library">
+        <h1>All Awesome books</h1>
+        <article class="libraryContent">
+            <div class="bookWraper">
+            </div>
+        </article>
+    </section>
+
+    <section class="addBook hide">
+        <div class="form-container">
+            <h2>ADD A NEW BOOK</h2>
+            <form class="form" action="./index.html" method="post">
+                <label for="title"></label>
+                <input class="inputclass" required type="text" name="title" id="title" placeholder="Title"> <br><br>
+                <label for="author"></label>
+                <input class="inputclass" required type="text" name="author" id="author" placeholder="Author"> <br><br>
+                <button id="add">Add</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="contactInfo hide">
+        <div class="contact_content">
+            <h2>Contact Information</h2>
+            <p>Do you any Question or you just want to say "Hello"? You can reach out ot us!</p>
+            <ul>
+                <li> Our e-mail mail@mail.com</li>
+                <li>Our phoone number: 0043566534221</li>
+                <li>Our address: Streetname 22, 93431 City,Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p class="Copyright">copyright</p>
+    </footer>
+    <script src="./assets/scripts/bookclasses.js"></script>
+    <script src="./assets/scripts/navigation.js"></script>
 </body>
 
 </html>
