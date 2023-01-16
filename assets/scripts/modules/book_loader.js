@@ -1,4 +1,4 @@
-import library from './modules/storage.js';
+import { library } from './Book.js';
 
 const loadBooks = () => {
   const bookWraper = document.querySelector('.bookWraper');
@@ -7,7 +7,7 @@ const loadBooks = () => {
     bookElement += `
                 <div class="book">
                 <div id="book-title">${book.title} by ${book.author}</div>
-                <button id="remove" onclick="remove(${book.id})" >Remove</button>
+                <button id="${book.id}" >Remove</button>
                 </div>
                 <hr> `;
   });
